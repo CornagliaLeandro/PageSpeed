@@ -1,0 +1,64 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Hugo 0.79.0">
+	<title>PageSpeed</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+
+			<div class="col-md6">
+				<h1>Ingrese las URLs a comparar</h1>
+				<form action="resultado" method="get">
+					<div class="form-group">
+						<label for="exampleInput">Ingrese la URL</label>
+						<input type="text" class="form-control" name="url" placeholder="Ejemplo: https://www.url.com/"  required>
+					</div>
+
+					<div class="form-group">
+						<label for="exampleInput">Ingrese la URL a comparar</label>
+						<input type="text" class="form-control" name="urlComparar"
+							placeholder="Ejemplo: https://www.urlacomparar.com/" required>
+					</div>
+				
+					<button type="submit" class="btn btn-primary">Comparar</button>
+					<p>Haga click y espere.</p>
+  					
+				</form>
+				 <div class="col-md-5">
+
+  				</div>
+				
+			</div>
+
+			<div class="col-md-3">
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
