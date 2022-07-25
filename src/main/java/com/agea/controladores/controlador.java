@@ -16,7 +16,7 @@ import com.agea.servicios.SpeedService;
 
 @Controller
 @RequestMapping("/")
-public class controlador {
+public class Controlador {
 
 	@Autowired
 	SpeedService speedServices;
@@ -24,6 +24,8 @@ public class controlador {
 	
 	@GetMapping("/resultado")
 	public String compararURL(ModelMap model, @RequestParam("url") String url, @RequestParam("urlComparar") String urlComparar){
+		
+		System.out.println("Espere mientras obtenemos los resultados");
 		
 		Agea pagina1 = speedServices.comparar(url);
 		Agea pagina2 = speedServices.comparar(urlComparar);
